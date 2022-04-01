@@ -1,0 +1,81 @@
+.congrats {
+
+
+
+  padding-top: 114px;
+  padding-bottom: 130px;
+
+  &__container {
+    position: relative;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  &__title {
+    margin-bottom: 54px;
+  }
+
+
+  &__wrapper {
+    height: 380px;
+    background-image: url(../img/congrats-bg.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+
+  }
+
+  &__swiper {
+    padding-top: 58px;
+    padding-left: 15px;
+    padding-right: 0px
+  }
+
+  &__swiper-btns {
+    position: absolute;
+    bottom: -36px;
+    right: 50%;
+  }
+
+
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -44px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 6.77px;
+    height: 6.77px;
+    background: linear-gradient(180deg, #FFC500 0%, #FF9346 100%);
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--brown-color);
+  }
+
+  &__swiper-button-prev {
+    left: auto;
+    right: 100px;
+  }
+
+  &__swiper-button-next {
+    right: auto;
+    left: 100px;
+  }
+
+  .swiper-button-prev:after,
+  .swiper-rtl .swiper-button-next:after {
+    content: '';
+  }
+
+  .swiper-button-next:after,
+  .swiper-rtl .swiper-button-prev:after {
+    content: '';
+  }
+
+
+
+
+
+}

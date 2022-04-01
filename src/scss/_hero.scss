@@ -1,0 +1,109 @@
+.hero {
+
+  padding-top: 43px;
+
+
+  background: #FFF06A;
+
+  &__container {
+    position: relative;
+  }
+
+  &__container::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/hero-bg.webp);
+    background-repeat: no-repeat;
+    top: -110px;
+    left: 0px;
+    width: 274px;
+    height: 725px;
+
+    z-index: 30;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 77px;
+  }
+
+  &__content-left {
+    position: relative;
+  }
+
+  // &__content-left::before {
+  //   content: "";
+  //   position: absolute;
+  //   background-image: url(../img/hero-bg.webp);
+  //   top: -6px;
+  //   left: -41px;
+  //   width: 274px;
+  //   height: 274px;
+  // }
+
+  &__content-right {
+    padding-right: 124px;
+  }
+
+  &__title {
+    margin-bottom: 36px;
+
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 79px;
+
+    color: #612B1C;
+  }
+
+  &__descr {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 34px;
+  }
+
+  &__descr::before {
+    content: "";
+    position: absolute;
+
+    background-image: url(../img/for-hero.webp);
+    top: -11px;
+    left: 0;
+    width: 25px;
+    height: 27px;
+  }
+
+  &__descr q {
+    margin-bottom: 12px;
+
+    font-size: 12.4775px;
+    line-height: 16px;
+
+    color: #612B1C;
+  }
+
+  &__descr cite {
+
+
+    font-size: 9.35814px;
+    line-height: 12px;
+
+    color: #612B1C;
+  }
+
+
+
+  &__btn {
+    margin-top: 73px;
+    margin-left: 16px;
+    align-self: flex-start;
+  }
+
+  &__btn span {
+    padding-left: 23px;
+  }
+
+
+}

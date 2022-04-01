@@ -1,0 +1,128 @@
+.present {
+
+  padding-top: 36px;
+  padding-bottom: 110px;
+
+  &__container {
+    position: relative;
+  }
+
+
+  &__content-top,
+  &__content-bottom {
+    text-align: center;
+  }
+
+  &__content-top {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__descr {
+    font: 400 16px/20px 'Montserrat', sans-serif;
+    color: var(--brown-color);
+  }
+
+  &__wrapper {
+    position: relative;
+    padding-left: 70px;
+  }
+
+  &__btn {
+    margin-top: 80px;
+    margin-bottom: 29px;
+    background: #85371F;
+  }
+
+  &__btn:hover {
+    background: #632b1a;
+  }
+
+  &__btn span {
+    padding-left: 8px;
+  }
+
+  &__bottom-descr {
+    display: block;
+    font: 400 16px/20px 'Montserrat', sans-serif;
+
+    color: var(--brown-color);
+  }
+
+  &__swiper {
+    height: 450px;
+    padding-top: 61px;
+    margin: 0 auto;
+  }
+
+  &__swiper-btns {
+    position: absolute;
+    bottom: -25px;
+    right: 51%;
+  }
+
+  &__swiper-img {
+    border: 10px solid var(--white-color);
+
+    width: 264px;
+    height: 296px;
+
+    box-shadow: 4px 7px 15px -6px #423a3a;
+  }
+
+  &__swiper-button-prev {
+    left: -100px;
+  }
+
+  &__swiper-button-next {
+    left: 100px;
+  }
+
+  &__swiper-slide.swiper-slide-active .zoom {
+    transform: scale(1.4); // увеличение на 20%
+
+    transition: transform .2s ease;
+  }
+
+  &__swiper-slide .zoom {
+    transform: scale(1); // уменьшить неактивный слайд
+    transition: transform .2s ease;
+  }
+
+  &__swiper-slide.swiper-slide-active .present__swiper-img {
+    transform: translateX(9px);
+  }
+
+  .swiper-button-prev:after,
+  .swiper-rtl .swiper-button-next:after {
+    content: '';
+  }
+
+  .swiper-button-next:after,
+  .swiper-rtl .swiper-button-prev:after {
+    content: '';
+  }
+
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -32px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 6.77px;
+    height: 6.77px;
+    background: linear-gradient(180deg, #FFC500 0%, #FF9346 100%);
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--brown-color);
+  }
+
+
+
+
+
+}
