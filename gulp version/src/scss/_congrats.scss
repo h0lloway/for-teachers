@@ -1,9 +1,6 @@
 .congrats {
-
-
-
   padding-top: 114px;
-  padding-bottom: 130px;
+  padding-bottom: 132px;
 
   &__container {
     position: relative;
@@ -12,35 +9,21 @@
   }
 
   &__title {
-    margin-bottom: 54px;
-  }
-
-
-  &__wrapper {
-    height: 380px;
-    background-image: url(../img/congrats-bg.webp);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-
-
+    padding-right: 25px;
   }
 
   &__swiper {
-    padding-top: 58px;
-    padding-left: 15px;
-    padding-right: 0px
+    padding-top: 43px;
   }
 
   &__swiper-btns {
     position: absolute;
-    bottom: -36px;
+    bottom: -31px;
     right: 50%;
   }
 
-
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: -44px;
+    bottom: -38px;
   }
 
   .swiper-pagination-bullet {
@@ -73,9 +56,34 @@
   .swiper-rtl .swiper-button-prev:after {
     content: '';
   }
+}
+
+@media (max-width: 1150px) {
+  .congrats {
+
+    &__swiper {
+      padding: 0;
+    }
+
+    &__title {
+      padding: 0;
+    }
+  }
+}
 
 
+@media (max-width: 1000px) {
+  .congrats {
+    padding-top: calc(40px + 74 * (100vw - 320px)/ 680);
+    padding-bottom: calc(40px + 90 * (100vw - 320px)/ 680);
+  }
+}
 
 
-
+@media (max-width: 700px) {
+  .congrats {
+    &__title {
+      margin: 0;
+    }
+  }
 }
