@@ -91,9 +91,19 @@
         </li>
       </ul>
 
-      <div class="header__menu">
-        <span>Тут может быть какой-то контент</span>
-      </div>
+      <ul class="header__menu list-reset">
+
+        <li class="header__list-item">
+          <a class="header__list-item-link" href="#congrats">Поздравления</a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__list-item-link" href="#cards">О Проекте</a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__list-item-link" href="#present">Открытки</a>
+        </li>
+
+      </ul>
 
       <button class="header__burger my-btn">
         <span></span>
@@ -114,13 +124,47 @@
               Мы&nbsp;&ndash; учителям!
             </h1>
             <div class="hero__descr">
-              <q>
-                Вся гордость учителя в&nbsp;учениках, в&nbsp;росте посеянных им&nbsp;семян...
-              </q>
-              <cite>
-                Д.&nbsp;Менделеев
-              </cite>
+
+
+              <!-- Slider main container -->
+              <div class="hero__swiper swiper" style="  width: 500px; height: 55px;">
+                <!-- Additional required wrapper -->
+                <ul class="hero__swiper-wrapper swiper-wrapper list-reset">
+                  <!-- Slides -->
+                  <li class="hero__swiper-slide swiper-slide">
+                    <q>
+                      Вся гордость учителя в&nbsp;учениках, в&nbsp;росте посеянных им&nbsp;семян...
+                    </q>
+                    <cite>
+                      Д.&nbsp;Менделеев
+                    </cite>
+                  </li>
+                  <li class="hero__swiper-slide swiper-slide">
+                    <q>
+                      Какая-то цитата...
+                    </q>
+                    <cite>
+                      Её автор
+                    </cite>
+                  </li>
+                  <li class="hero__swiper-slide swiper-slide">
+                    <q>
+                      Ещё какая-то цитата...
+                    </q>
+                    <cite>
+                      И её автор
+                    </cite>
+                  </li>
+                </ul>
+              </div>
+
+
             </div>
+
+
+
+
+
             <button class="hero__btn round-btn my-btn">
               <svg class="social-btn" width="41" height="28">
                 <use xlink:href="img/sprite.svg#youtube2"></use>
@@ -143,16 +187,16 @@
 
             <ul class="subhero__list list-reset">
               <li class="subhero__list-item">
-                <a href="#" class="subhero__list-item-link">Поздравления</a>
+                <a href="#congrats" class="subhero__list-item-link">Поздравления</a>
               </li>
               <li class="subhero__list-item">
-                <a href="#" class="subhero__list-item-link">О Проекте</a>
+                <a href="#cards" class="subhero__list-item-link">О Проекте</a>
               </li>
               <li class="subhero__list-item">
                 <a href="#" class="subhero__list-item-link">Акции</a>
               </li>
               <li class="subhero__list-item">
-                <a href="#" class="subhero__list-item-link">Открытки</a>
+                <a href="#present" class="subhero__list-item-link">Открытки</a>
               </li>
             </ul>
 
@@ -163,7 +207,7 @@
       </div>
     </section>
 
-    <section class="cards">
+    <section class="cards" id="cards">
       <div class="container cards__container">
 
         <ul class="cards__list list-reset">
@@ -251,7 +295,7 @@
       </div>
     </section>
 
-    <section class="congrats">
+    <section class="congrats" id="congrats">
 
       <div class="container congrats__container">
         <h2 class="congrats__title title">
@@ -322,7 +366,7 @@
 
     </section>
 
-    <section class="present">
+    <section class="present" id="present">
       <div class="container present__container">
         <div class="present__content-top">
           <h2 class="present__title title">
@@ -393,12 +437,15 @@
 
 
         <div class="present__content-bottom">
-          <button class="present__btn my-btn round-btn">
-            <svg class="upload" width="24" height="24">
-              <use xlink:href="img/sprite.svg#upload"></use>
-            </svg>
-            <span>Загрузить фото</span>
-          </button>
+          <form class="present__btn round-btn" action="#" method="GET">
+            <input class="present__input-file" type="file" name="file" id="input-file" multiple>
+            <label class="present__label" for="input-file">
+              <svg class="upload" width="24" height="24">
+                <use xlink:href="img/sprite.svg#upload"></use>
+              </svg>
+              <span>Загрузить фото</span>
+            </label>
+          </form>
           <span class="present__bottom-descr">
             Формат&nbsp;&mdash; .jpg, .jpeg, .png, .tiff, .bmp
           </span>
@@ -411,13 +458,13 @@
   <footer class="footer">
     <div class="container footer__container">
       <div class="footer__content">
-        <a class="footer__link" href="#">
-          <img src="img/footer-logo.webp" alt="#" width="363" height="45">
+        <a class="footer__link" href="/">
+          Мы-<span class="transp">учителям</span>!
         </a>
 
         <ul class="footer__list list-reset">
           <li class="footer__list-item">
-            <a class="footer__list-item-link" href="#">
+            <a class="footer__list-item-link" href="#congrats">
               Поздравления
             </a>
           </li>
@@ -427,7 +474,7 @@
             </a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-item-link" href="#">
+            <a class="footer__list-item-link" href="#present">
               Открытки
             </a>
           </li>
