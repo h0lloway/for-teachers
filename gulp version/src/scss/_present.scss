@@ -1,7 +1,7 @@
 .present {
 
-  padding-top: 36px;
-  padding-bottom: 110px;
+  padding-top: 32px;
+  padding-bottom: 107px;
 
   &__container {
     position: relative;
@@ -15,11 +15,10 @@
 
   &__content-top {
     margin-bottom: 34px;
-    padding-right: 25px;
   }
 
   &__title {
-    margin-bottom: 13px;
+    margin-bottom: 10px;
   }
 
   &__descr {
@@ -32,13 +31,9 @@
     margin-left: -51px;
   }
 
-  &__content-bottom {
-    padding-right: 25px;
-  }
-
   &__btn {
-    margin-top: 71px;
-    margin-bottom: 29px;
+    margin-top: 69px;
+    margin-bottom: 31px;
     background: #85371F;
     padding: 19px 60px;
   }
@@ -49,6 +44,18 @@
 
   &__btn span {
     padding-left: 8px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__input-file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
   }
 
   &__bottom-descr {
@@ -66,8 +73,8 @@
 
   &__swiper-btns {
     position: absolute;
-    bottom: -11px;
-    right: 51%;
+    bottom: -9px;
+    right: 50%;
   }
 
   &__swiper-button-prev {
@@ -118,7 +125,8 @@
   }
 
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: -18px;
+    bottom: -16px;
+    left: 14px;
   }
 
   .swiper-pagination-bullet {
@@ -209,13 +217,17 @@
 
 @media (max-width: 500px) {
   .present {
-    .upload {
-      display: none;
-    }
+    // .upload {
+    //   display: none;
+    // }
 
     &__btn {
-      font-size: 15px;
+      font-size: 14px;
       line-height: 16px;
+    }
+
+    &__btn span {
+      padding-left: 5px;
     }
 
   }

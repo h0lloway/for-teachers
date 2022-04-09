@@ -8,22 +8,18 @@
     padding: 0;
   }
 
-  &__title {
-    padding-right: 25px;
-  }
-
   &__swiper {
     padding-top: 43px;
   }
 
   &__swiper-btns {
     position: absolute;
-    bottom: -31px;
+    bottom: -25px;
     right: 50%;
   }
 
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: -38px;
+    bottom: -32px;
   }
 
   .swiper-pagination-bullet {

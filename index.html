@@ -118,7 +118,27 @@
     <section class="hero" id="hero">
       <div class="container hero__container">
         <div class="hero__content">
-          <div class="hero__content-left"></div>
+          <div class="hero__content-left">
+
+            <!-- Slider main container -->
+            <div class="hero__left-swiper swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="img/hero-img.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/hero-img.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/hero-img.webp" alt="">
+                </div>
+              </div>
+
+            </div>
+
+          </div>
           <div class="hero__content-right">
             <h1 class="hero__title">
               Мы&nbsp;&ndash; учителям!
@@ -127,7 +147,7 @@
 
 
               <!-- Slider main container -->
-              <div class="hero__swiper swiper" style="  width: 500px; height: 55px;">
+              <div class="hero__swiper swiper">
                 <!-- Additional required wrapper -->
                 <ul class="hero__swiper-wrapper swiper-wrapper list-reset">
                   <!-- Slides -->
@@ -165,14 +185,14 @@
 
 
 
-            <button class="hero__btn round-btn my-btn">
+            <a class="hero__btn round-btn" href="#">
               <svg class="social-btn" width="41" height="28">
                 <use xlink:href="img/sprite.svg#youtube2"></use>
               </svg>
               <span>
                 Смотреть все поздравления
               </span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -187,16 +207,28 @@
 
             <ul class="subhero__list list-reset">
               <li class="subhero__list-item">
-                <a href="#congrats" class="subhero__list-item-link">Поздравления</a>
+                <svg class="bg1">
+                  <use xlink:href="img/sprite.svg#1"></use>
+                </svg>
+                <a class="subhero__list-item-link" href="#congrats">Поздравления</a>
               </li>
               <li class="subhero__list-item">
-                <a href="#cards" class="subhero__list-item-link">О Проекте</a>
+                <svg class="bg2">
+                  <use xlink:href="img/sprite.svg#2"></use>
+                </svg>
+                <a class="subhero__list-item-link" href="#cards">О Проекте</a>
               </li>
               <li class="subhero__list-item">
-                <a href="#" class="subhero__list-item-link">Акции</a>
+                <svg class="bg3">
+                  <use xlink:href="img/sprite.svg#3"></use>
+                </svg>
+                <a class="subhero__list-item-link" href="#">Акции</a>
               </li>
               <li class="subhero__list-item">
-                <a href="#present" class="subhero__list-item-link">Открытки</a>
+                <svg class="bg4">
+                  <use xlink:href="img/sprite.svg#4"></use>
+                </svg>
+                <a class="subhero__list-item-link" href="#present">Открытки</a>
               </li>
             </ul>
 
@@ -381,39 +413,46 @@
           <!-- Slider main container -->
           <div class="present__swiper swiper">
             <!-- Additional required wrapper -->
-            <div class="present__swiper-wrapper swiper-wrapper">
+            <ul class="present__swiper-wrapper swiper-wrapper list-reset">
+
               <!-- Slides -->
-              <div class="present__swiper-slide swiper-slide">
+              <li class="present__swiper-slide swiper-slide">
                 <div class="zoom">
                   <img class="present__swiper-img" src="img/present-1.webp" alt="#">
                 </div>
-              </div>
-              <div class="present__swiper-slide swiper-slide">
+              </li>
+              <li class="present__swiper-slide swiper-slide">
                 <div class="zoom">
                   <img class="present__swiper-img" src="img/present-2.webp" alt="#" style="border: 5px solid #fff;">
                 </div>
-              </div>
-              <div class="present__swiper-slide swiper-slide">
+              </li>
+              <li class="present__swiper-slide swiper-slide">
                 <div class="zoom">
                   <img class="present__swiper-img" src="img/present-3.webp" alt="#">
                 </div>
-              </div>
-              <div class="present__swiper-slide swiper-slide">
+              </li>
+              <li class="present__swiper-slide swiper-slide">
                 <div class="zoom">
                   <img class="present__swiper-img" src="img/present-1.webp" alt="#">
                 </div>
-              </div>
-              <div class="present__swiper-slide swiper-slide">
+              </li>
+              <li class="present__swiper-slide swiper-slide">
                 <div class="zoom">
                   <img class="present__swiper-img" src="img/present-2.webp" alt="#" style="border: 5px solid #fff;">
                 </div>
-              </div>
-              <div class="present__swiper-slide swiper-slide">
+              </li>
+              <li class="present__swiper-slide swiper-slide">
                 <div class="zoom">
                   <img class="present__swiper-img" src="img/present-3.webp" alt="#">
                 </div>
-              </div>
-            </div>
+              </li>
+              <li class="present__swiper-slide swiper-slide">
+                <div class="zoom">
+                  <img class="present__swiper-img" src="img/present-1.webp" alt="#">
+                </div>
+              </li>
+
+            </ul>
           </div>
 
 

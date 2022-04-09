@@ -55,6 +55,19 @@ window.addEventListener('scroll', () => {
 
 // SWIPERs
 
+const swiper = new Swiper('.hero__left-swiper', {
+  // Optional parameters
+  slidesPerView: 3,
+  direction: 'vertical',
+  loop: true,
+  speed: 1500,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+});
+
+
 const heroSwiper = new Swiper('.hero__swiper', {
   // Optional parameters
   loop: true,
@@ -64,7 +77,7 @@ const heroSwiper = new Swiper('.hero__swiper', {
     disableOnInteraction: false,
   },
 
-  });
+});
 
 const congratsSwiper = new Swiper('.congrats__swiper', {
   // Optional parameters

@@ -28,6 +28,16 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "AdelleCyrillic";
+  src: local("AdelleCyrillic"),
+    url(../fonts/AdelleCyrillic.woff2) format("woff2"),
+    url(../fonts/AdelleCyrillic.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 html {
   box-sizing: border-box;
@@ -146,7 +156,7 @@ body.dark {
 }
 
 .container {
-  max-width: 1151px;
+  max-width: 1173px;
   margin: 0 auto;
   padding-right: 30px;
   padding-left: 30px;
