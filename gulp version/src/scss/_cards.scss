@@ -5,15 +5,15 @@
   background: #FFFBD8;
 
   &__container {
-    max-width: 1201px;
-    padding-right: 30px;
-    padding-left: 30px;
+    max-width: 1241px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 34px;
+    column-gap: 38px;
   }
 
   .card {
@@ -26,25 +26,13 @@
     &__wrap-top::before {
       content: "";
       position: absolute;
-
-      background-image: url(../img/card-bg.webp);
+      background-image: url(../img/cards-bg.webp);
       background-repeat: no-repeat;
-      top: -66px;
-      left: -68px;
-      width: 208px;
-      height: 221px;
-      z-index: 1;
-    }
-
-    &__wrap-top::after {
-      content: "";
-      position: absolute;
-      background-image: url(../img/for-cards.webp);
-      background-repeat: no-repeat;
-      bottom: -37px;
-      left: 0px;
-      width: 23px;
-      height: 23px;
+      background-size: cover;
+      top: -35px;
+      left: -38px;
+      width: 189px;
+      height: 200px;
       z-index: 1;
     }
 
@@ -76,13 +64,7 @@
     }
 
     &__txt {
-      // font: 400 16px/20px Montserrat,sans-serif;
-
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
-
+      font: 400 16px/20px Montserrat, sans-serif;
       color: var(--brown-color);
     }
   }
@@ -92,7 +74,7 @@
   .cards {
 
     &__list {
-      column-gap: 18px;
+      column-gap: 50px;
     }
 
     .card {
@@ -101,18 +83,19 @@
         margin-bottom: 12px;
       }
 
-      &__wrap-top::before,
-      &__wrap-top::after {
-        display: none;
-      }
+      // &__wrap-top::before,
+      // &__wrap-top::after {
+      //   display: none;
+      // }
 
       &__top-descr {
-        padding-left: 15px;
+        padding-left: 35px;
       }
 
       &__wrap-bottom {
         padding: 0;
         max-width: 100%;
+        margin-top: 55px;
       }
     }
   }
@@ -122,19 +105,35 @@
 
 @media (max-width: 1000px) {
   .cards {
-    padding-top: calc(40px + 136 * (100vw - 320px)/ 680);
+    padding-top: calc(50px + 126 * (100vw - 320px)/ 680);
     padding-bottom: calc(40px + 101 * (100vw - 320px)/ 680);
   }
 }
 
-@media (max-width: 899px) {
+@media (max-width: 950px) {
   .cards {
 
 
     &__list {
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 30px;
-      row-gap: 30px;
+      column-gap: 50px;
+      row-gap: 50px;
+    }
+
+
+    .card {
+
+      &__title {
+        font-size: 14px;
+      }
+
+      &__top-descr span {
+        font-size: 12px;
+      }
+
+      &__txt {
+        font-size: 14px;
+      }
     }
   }
 }
@@ -143,7 +142,7 @@
   .cards {
 
     &__container {
-      padding: 0 10px;
+      padding: 0 45px;
     }
 
 
@@ -151,7 +150,7 @@
       grid-template-columns: 1fr;
       grid-row: 1;
       column-gap: 0;
-      row-gap: 25px;
+      row-gap: 65px;
     }
   }
 }
